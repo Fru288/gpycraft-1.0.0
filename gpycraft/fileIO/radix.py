@@ -37,6 +37,7 @@ class radix:
                 'message' : 'Attempting to convert .xlsx to a dotfile without specifiying numeric columns will result to error when converting dotfile to xlsx',
                 'do':'create a list of numeric columns cols=[] '
             }
-            print(f'WARNING: {warning} \n')
+            print(f'\033[91mWARNING: {warning}\033[0m\n')
+
             
         return df
